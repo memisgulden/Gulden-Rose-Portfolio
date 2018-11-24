@@ -7,13 +7,15 @@
 //         $(this).css("font-style", "none");
 //     });
 
-$(document).ready(function () {
-    $('.carousel').carousel();
-});
+// $(document).ready(function () {
+//     $('.carousel').carousel();
+// });
 
 
 
-$(document).ready(function(){
-    $('.parallax').parallax();
-  });
-        
+// $(document).ready(function () {
+//     $('.parallax').parallax();
+// });
+
+
+

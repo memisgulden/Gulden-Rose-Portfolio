@@ -30,7 +30,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="https://fonts.googleapis.com/css?family=Alegreya+SC:900|Cinzel:700|Vollkorn:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 
     <!-- Materialize Icon Link-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -110,23 +110,24 @@
             <div class="container">
                 <br>
                 <br>
-                <!--TODO: Will Glitch on Hover-->
-                <h2 id="header" class="header center white-text">Gulden Rose Memis</h2>
+                <div id="center">
+                <h2 id="header" class="center white-text">Gulden Rose Memis</h2>
+                </div>
                 <!-- <hr> -->
                 <h4 id="description" class="header center white-text">Full Stack Developer</h4>
                 <br>
                 <div class="center-align">
-                    <a id="socialButtons" class="waves-effect waves-light btn-floating social github">
+                    <a href="https://github.com/memisgulden" target="_blank" id="socialButtons" class="waves-effect waves-light btn-floating social github">
                         <i class="fa fa-github"></i>
                     </a>
 
-                    <a id="socialButtons" class="waves-effect waves-light btn-floating social linkedin">
+                    <a href="https://www.linkedin.com/in/guldenmemis/" target="_blank" id="socialButtons" class="waves-effect waves-light btn-floating social linkedin">
                         <i class="fa fa-linkedin"></i>
                     </a>
 
-                    <a id="socialButtons" class="waves-effect waves-light btn-floating social slack">
+                    <!-- <a id="socialButtons" class="waves-effect waves-light btn-floating social slack">
                         <i class="fa fa-slack"></i>
-                    </a>
+                    </a> -->
 
                 </div>
                 <br>
@@ -150,7 +151,7 @@
     <div class="parallax-container" id="aboutMe">
 
         <div class="center">
-            <h3 class="topTitle">About Me</h3>
+            <h3 class="topTitle">ABOUT ME</h3>
         </div>
 
 
@@ -196,20 +197,19 @@
     <div id="resume" class="parallax-container">
 
         <div class="center">
-            <h3 class="topTitle">Resume</h3>
+            <h3 class="topTitle">RESUME</h3>
         </div>
 
 
-        <button class="btn">Button</button>
-        <div class="dropdown">
-            <button class="btn" style="border-left:1px solid #0d8bf2">
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
+        <div class="center-align">
+
+            <a href="Gulden Memis Resume 2018.pdf" target="_blank">
+                <button id="btn1" class="waves-effect waves-light btn-large pulse">
+
+                    <i class="material-icons left">visibility</i>View
+                </button>
+            </a>
+
         </div>
         <div class="parallax">
             <img id="spaceman" src="photos/spaceman.jpg" alt="Galaxy Img.">
@@ -224,16 +224,27 @@
     <!-- Portfolio Page-->
     <div id="portfolio" class="parallax-container">
         <div class="center">
-            <h3 class="topTitle">Portfolio</h3>
+            <h3 class="topTitle">PORTFOLIO</h3>
         </div>
 
         <!-- Carousel for Portfolio-->
 
         <div class="carousel pb-3">
-            <a class="carousel-item" href="#one!"><img class="portfoliosPic" src="photos/fish.jpg"></a>
-            <a class="carousel-item" href="#two!"><img class="portfoliosPic" src="photos/fish.jpg"></a>
-            <a class="carousel-item" href="#three!"><img class="portfoliosPic" src="photos/fish.jpg"></a>
-            <a class="carousel-item" href="#four!"><img class="portfoliosPic" src="photos/fish.jpg"></a>
+            <a class="carousel-item modal-trigger" href="#modal1!"><img class="portfoliosPic" src="photos/r.roulette.png"></a>
+              <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Modal Header</h4>
+          <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+      </div>
+            
+            <a class="carousel-item" href="#two!"><img class="portfoliosPic" src="photos/recipeze.png"></a>
+            <a class="carousel-item" href="#three!"><img class="portfoliosPic" src="photos/word game.png"></a>
+            <a class="carousel-item" href="#four!"><img class="portfoliosPic" src="photos/friend finder.png"></a>
             <a class="carousel-item" href="#five!"><img class="portfoliosPic" src="photos/fish.jpg"></a>
         </div>
 
@@ -249,7 +260,7 @@
     <!-- Contact Page-->
     <div id="contact" class="parallax-container">
         <div class="center">
-            <h3 class="topTitle">Contact Me</h3>
+            <h3 class="topTitle">CONTACT ME</h3>
         </div>
 
         <!-- Form Area-->

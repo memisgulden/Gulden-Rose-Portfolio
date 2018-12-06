@@ -1,21 +1,7 @@
-// $("a").hover(function () {
-//     //on hover
-//     $(this).css("font-style", "italic"),   
-//     },
-//     // after hover
-//     function () {
-//         $(this).css("font-style", "none");
-//     });
+console.log("I work!");
 
-// $(document).ready(function () {
-//     $('.carousel').carousel();
-// });
-
-
-
-// $(document).ready(function () {
-//     $('.parallax').parallax();
-// });
-
-
-
+$(document).ready(function () {
+  $('.modal').modal();
+  $('.carousel').carousel();
+  $('.sidenav').sidenav();
+});

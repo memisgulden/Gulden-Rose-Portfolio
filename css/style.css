@@ -42,24 +42,18 @@ html, .body{
              -2px -4px rgba(255, 210, 0, 1);
 
 }
+/* End Glitch */
 
 
-
-/* NavBar Area */
-nav.nav-center ul {
-    text-align: center;
-}
-nav.nav-center ul li {
-    display: inline;
-    float: none;
-}
-nav.nav-center ul li a {
-    display: inline-block;
+/* Side Panel */
+#slide-out{
+    width: 200px;
 }
 
-#topNav {
-    background-color: black;
-    opacity: .5;
+#myPic {
+    height: 250px;
+    width: 200px;
+    object-fit: cover;
 }
 
 

@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gulden Rose Memis</title>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -41,6 +43,24 @@
     <!-- Favicon Link-->
     <link rel="icon" href="favicon.ico">
 
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+                   * element that contains the map. */
+        #map {
+            height: 100%;
+        }
+
+        ;
+
+        /* Optional: Makes the sample page fill the window. */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
 
 </head>
 
@@ -50,125 +70,123 @@
 <body>
 
     <!-- Side Banner -->
-        <ul id="slide-out" class="sidenav sidenav-fixed">
-                <img id="myPic" class="responsive-img" src="photos/profilepic.jpg">
-                <li><a href="index.html">Home</a></li>
-            <!-- <hr>     -->
-                <li><a href="index.html#aboutMe">About Me</a></li>
-                <li><a href="index.html#resume">Resume</a></li>
-                <li><a href="index.html#portfolio">Portfolio</a></li>
-                <li><a href="index.html#contact">Contact Me</a></li>
-              </ul>
-        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+        <img id="myPic" class="responsive-img" src="photos/profilepic.jpg">
+        <li><a href="index.html">Home</a></li>
+        <!-- <hr>     -->
+        <li><a href="index.html#aboutMe">About Me</a></li>
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="index.html#contact">Contact Me</a></li>
+        <li><a href="Gulden Memis Resume 2018.pdf" target="_blank">Resume</a></li>
 
-    <div class="parallax-container" id="homeBanner">
+
+    </ul>
+    <!-- Button for side nav on collapse-->
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+
+    <div class="container" id="home">
         <!-- Top Banner Home Page-->
-        <div id="home">
-            <div class="container">
-                <br>
-                <br>
-                <div id="center">
+        <div class="row">
+
+            <div id="center">
                 <h2 id="header" class="center white-text">Gulden Rose Memis</h2>
-                </div>
-                <!-- <hr> -->
-                <h4 id="description" class="header center white-text">Full Stack Developer</h4>
-                <br>
-                <div class="center-align">
-                    <a href="https://github.com/memisgulden" target="_blank" id="socialButtons" class="waves-effect waves-light btn-floating social github">
-                        <i class="fa fa-github"></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/guldenmemis/" target="_blank" id="socialButtons" class="waves-effect waves-light btn-floating social linkedin">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
-
-                </div>
-                <br>
-                <br>
-                <div class="center-align" id="arrow">
-                    <i class="small material-icons white-text">arrow_downward</i>
-                </div>
-                <br>
+                <h5 id="description" class="header center white-text">Full Stack Developer</h5>
             </div>
-            
-        </div>
-        <div class="parallax">
-            <img id="moon" src="photos/moon.jpg" alt="Moon Img.">
-        </div>
-    </div>
 
-    <!-- title bar for spacing between sections -->
-    <!-- <div id="titleBar" class="parallax-container" style="background-color: black">
-    </div> -->
+            <div class="center-align" id="arrow">
+                <i class="small material-icons white-text">arrow_downward</i>
+            </div>
+        </div>
+
+
+    </div>
 
     <!-- About Page-->
-    <div class="parallax-container" id="aboutMe">
+    <div class="container" id="aboutMe">
 
-        <div class="center">
-            <h3 class="topTitle">ABOUT ME</h3>
-        </div>
+        <div class="container" id="cardContainer">
 
+            <div class="row">
 
-        <div class="row">
-            <div id="aboutMeCard">
-                <div class="card-panel">
-                    <img id="profilepic" class="responsive-img" src="photos/profilepic.jpg">
-
-                    <p id="aboutMeText" class="flow-text">
-                        Hello world! My name is Gulden Rose Memis and I am a new developer excited about this field. I
-                        graduated Temple University in 2017 with a degree in Finance. My passions include traveling,
-                        music, food
-                        and rugby. Above all, the thing I love the most is trying new things. I proved this to myself
-                        at
-                        Temple where, without any prior experience in rugby, I decided to join the team. I did not want
-                        to
-                        join as a player in the back running the ball but as a forward, head-first into the action.
-                        Although
-                        I got my ass handed to me many, many times there is nothing more exciting then having the ball,
-                        running at full speed and taking people down as you go. This head-first-all-or-nothing attitude
-                        is how
-                        I approach the obstacles that life has thrown my way. This is exactly how I plan on continuing.
-                        This passion of delving into "new" is what lead me into this field. Although I have no prior
-                        background, a career in full-stack development is something that excites me a great deal. I
-                        look forward to
-                        making new programs, solving new problems and working in a new atomosphere. On or off the field
-                        I am
-                        always ready to run full force.</p>
+                <div class="col s4">
+                    <div class="card">
+                        <div class="card-content">
+                            <i class="fa fa-id-card" aria-hidden="true"></i>
+                            <h3>Who am I?</h3>
+                            <p>I am a very simple card. I am good at containing small bits of information. I am
+                                convenient
+                                because I require little markup to use effectively.</p>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="col s4">
+                    <div class="card">
+                        <div class="card-content">
+                            <i class="fa fa-laptop" aria-hidden="true"></i>
+                            <h3>My Specialties</h3>
+                            <p>I am a very simple card. I am good at containing small bits of information. I am
+                                convenient
+                                because I require little markup to use effectively.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s4">
+                    <div class="card">
+                        <div class="card-content">
+                            <i class="fa fa-line-chart" aria-hidden="true"></i>
+                            <h3>Education and Jobs</h3>
+                            <p>I am a very simple card. I am good at containing small bits of information. I am
+                                convenient
+                                because I require little markup to use effectively.</p>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
-        </div>
-        <div class="parallax">
-            <img id="galaxy2" src="photos/galaxy2.jpg" alt="Galaxy Img.">
+
+            <div class="row">
+
+                <div class="col s4">
+                    <div class="card">
+                        <div class="card-content">
+                            <i class="fa fa-id-card" aria-hidden="true"></i>
+                            <h3>Hobbies and Interests</h3>
+                            <p>I am a very simple card. I am good at containing small bits of information. I am
+                                convenient
+                                because I require little markup to use effectively.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s4">
+                    <div class="card">
+                        <div class="card-content">
+                            <i class="fa fa-laptop" aria-hidden="true"></i>
+                            <h3>Languages</h3>
+                            <p>I am a very simple card. I am good at containing small bits of information. I am
+                                convenient
+                                because I require little markup to use effectively.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
         </div>
     </div>
 
 
-    <!-- title bar for spacing between sections -->
-    <div id="titleBar" class="parallax-container" style="background-color: black">
-    </div>
-
-    <!-- Resume Page-->
-    <div id="resume" class="parallax-container">
-
-        <div class="center">
-            <h3 class="topTitle">RESUME</h3>
-        </div>
 
 
-        <div class="center-align">
 
-            <a href="Gulden Memis Resume 2018.pdf" target="_blank">
-                <button id="btn1" class="waves-effect waves-light btn-large pulse">
-
-                    <i class="material-icons left">visibility</i>View
-                </button>
-            </a>
-
-        </div>
-        <div class="parallax">
-            <img id="spaceman" src="photos/spaceman.jpg" alt="Galaxy Img.">
-        </div>
-    </div>
 
 
     <!-- title bar for spacing between sections -->
@@ -185,17 +203,17 @@
 
         <div class="carousel pb-3">
             <a class="carousel-item modal-trigger" href="#modal1!"><img class="portfoliosPic" src="photos/r.roulette.png"></a>
-              <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-        <div class="modal-content">
-          <h4>Modal Header</h4>
-          <p>A bunch of text</p>
-        </div>
-        <div class="modal-footer">
-          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-        </div>
-      </div>
-            
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <h4>Modal Header</h4>
+                    <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                </div>
+            </div>
+
             <a class="carousel-item" href="#two!"><img class="portfoliosPic" src="photos/recipeze.png"></a>
             <a class="carousel-item" href="#three!"><img class="portfoliosPic" src="photos/word game.png"></a>
             <a class="carousel-item" href="#four!"><img class="portfoliosPic" src="photos/friend finder.png"></a>
@@ -207,58 +225,33 @@
         </div>
     </div>
 
-    <!-- title bar for spacing between sections -->
-    <div id="titleBar" class="parallax-container" style="background-color: black">
-    </div>
 
     <!-- Contact Page-->
-    <div id="contact" class="parallax-container">
-        <div class="center">
-            <h3 class="topTitle">CONTACT ME</h3>
-        </div>
+    <div class="container" id="contact">
 
-        <!-- Form Area-->
-        <div class="row">
-            <div class="card small" id="form">
-                <div class="row">
+        <span class="metadata-marker" style="display: none;" data-region_tag="html-body"></span>
+        <div id="map"></div>
+        <script>
+            // <span class="metadata-marker" style="display: none;" data-region_tag="script-body"></span>      
+            var map;
+            function initMap() {
+                map = new google.maps.Map(document.getElementById('map'), {
+                    center: { lat: 39.95233, lng: -75.16379 },
+                    zoom: 12
+                });
 
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">account_circle</i>
-                        <input id="icon_prefix" type="text" class="validate">
-                        <label for="icon_prefix">Name</label>
-                    </div>
-
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">phone</i>
-                        <input id="icon_telephone" type="tel" class="validate">
-                        <label for="icon_telephone">Telephone</label>
-                    </div>
-
-                    <div class="input-field col s12">
-                        <i class="material-icons prefix">mode_edit</i>
-                        <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                        <label for="icon_prefix2">Message</label>
-                    </div>
-                </div>
-            </div>
+                var marker = new google.maps.Marker({
+                    position: { lat: 39.95233, lng: -75.16379 },
+                    title: "Hello World!"
+                });
+                marker.setMap(map);
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQB8UU5l07-W5e-G_SCK186vyRh9Hdgp8&callback=initMap"
+            async defer></script>
 
 
 
-        </div>
-        <div class="parallax">
-            <img id="swirl" src="photos/swirl.jpg" alt="Galaxy Img.">
-        </div>
-
-
-
-        <!-- Footer-->
-        <footer class="page-footer">
-            <!-- <div class="footer-copyright"> -->
-            <div class="container">
-                © 2018 Copyright Gulden Rose Memis
-            </div>
-
-        </footer>
 
 
     </div>

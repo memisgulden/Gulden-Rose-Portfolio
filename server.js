@@ -15,10 +15,11 @@ app.use(express.json());
 // Routes
 // =============================================================
 
+// app.use(express.static(path.join(__dirname, "css")));
+
 // Basic route that sends the user first to the AJAX Page
-app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "index.html"));
-});
+app.use(express.static(__dirname + '/public'))
+
 
 // Starts the server to begin listening
 // =============================================================

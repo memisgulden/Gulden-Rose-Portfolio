@@ -1,6 +1,7 @@
 html, .body{
     font-family: 'Space Mono', monospace;   
     background-color: black;
+    overflow-x: hidden;
 }
 
 /* GLITCH */
@@ -58,9 +59,10 @@ html, .body{
 #home{
     height: 650px;
     background-image: url("../photos/moon.jpg");
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 0;
-    width: 100%;
+    width: auto;
 }
 
 /* NAME */
@@ -92,10 +94,6 @@ html, .body{
 
 
 
-/* Blank space between each section */
-#titleBar {
-    height: 20px;
-}
 
 
 /* Gulden Rose Memis */
@@ -123,13 +121,17 @@ html, .body{
 
 /* About Me Area */
 #aboutMe {
-    height: 900px;
+    height: 1000px;
     background-color: white;
     margin: 0;
-    width: 100%;
+    width: auto;
 
 }
 
+.card{
+    word-wrap:break-word;
+}
+word-wrap:break-word;
 #cardContainer {
     margin-left: 20%;
 }
@@ -215,9 +217,35 @@ html, .body{
 /* Media Query */ 
 @media only screen and (max-width: 600px) {
     body {
-        background-color: lightblue;
+        background-color: black;
     }
+
+    #home{
+        background-position: center;
+    }
+
+    #header{
+        font-size: 5em;
+        float: left;
+    }
+
+    #description{
+        font-size: 2em;
+    }
+
+    /* About Me Area */
+    #aboutMe {
+    width: 600px;
+    margin-left: 0 !important;
+    height: 1300px;
+    }
+
+
 }
 
-
+@media only screen and (max-width: 1024px) {
+    #aboutMe {
+        margin-left: 15%;
+    }
+}
 

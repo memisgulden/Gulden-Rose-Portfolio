@@ -41,7 +41,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Favicon Link-->
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="./photos/favicon.ico">
 
     <style>
         /* Always set the map height explicitly to define the size of the div
@@ -84,8 +84,9 @@
     </ul>
 
     <!-- Button for side nav on collapse-->
+    <button class="btn-floating waves-effect waves-light pulse blue darken-1">
     <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-
+    </button>    
 
     <div class="container" id="home">
         <!-- Top Banner Home Page-->
@@ -296,32 +297,33 @@
     <!-- Portfolio Page-->
     <div id="portfolio" class="container">
         <div class="carousel carousel-slider center">
-            
+
             <div class="carousel-item red white-text" href="#one!">
                 <h2>AXE.app</h2>
                 <p class="white-text">An app for axe throwing companies to provide better user experience.</p>
-                <button id="modal" data-target="modal1" class="btn modal-trigger">Learn More</button> 
+                <button id="modal" data-target="modal1" class="btn modal-trigger">Learn More</button>
 
             </div>
 
             <div class="carousel-item amber white-text" href="#two!">
                 <h2>r.roulette</h2>
-                <p class="white-text">The app will takes input from all members of group to randomly decide where the group should eat or drink.</p>
-                <button id="modal" data-target="modal2" class="btn modal-trigger">Learn More</button> 
+                <p class="white-text">The app will takes input from all members of group to randomly decide where the
+                    group should eat or drink.</p>
+                <button id="modal" data-target="modal2" class="btn modal-trigger">Learn More</button>
 
             </div>
-            
+
             <div class="carousel-item green white-text" href="#three!">
-                <h2>Third Panel</h2>
-                <p class="white-text">This is your third panel</p>
-                <button id="modal" data-target="modal1" class="btn modal-trigger">Modal3</button> 
+                <h2>Trivia Game</h2>
+                <p class="white-text">It's Always Sunny in Philadelphia</p>
+                <button id="modal" data-target="modal3" class="btn modal-trigger">Learn More</button>
 
             </div>
 
             <div class="carousel-item blue white-text" href="#four!">
-                <h2>Fourth Panel</h2>
-                <p class="white-text">This is your fourth panel</p>
-                <button id="modal" data-target="modal1" class="btn modal-trigger">Modal4</button> 
+                <h2>Recipeze</h2>
+                <p class="white-text">Recipes with ease: Find recipes using a sigle ingredient.</p>
+                <button id="modal" data-target="modal4" class="btn modal-trigger">Learn More</button>
 
             </div>
         </div>
@@ -338,18 +340,46 @@
         </div>
 
         <div id="modal2" class="modal">
+            <div class="modal-content">
+                <h4>Restaurant Roulette</h4>
+                <p>Built With: Node.js, Express, Sequelize, Bootstrap, AOS.css, MySQL, Cookie-Session,
+                    Passport-Google-OAUTH20, MongoDB, mLab</p>
+                <a href="https://github.com/memisgulden/Full-Stack-Project" target="_blank">GitHub</a>
+                <hr>
+                <a href="https://arcane-citadel-23385.herokuapp.com/" target="_blank">See It Live</a>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+
+        <div id="modal3" class="modal">
                 <div class="modal-content">
-                    <h4>Restaurant Roulette</h4>
-                    <p>Built With: Node.js, Express, Sequelize, Bootstrap, AOS.css, MySQL, Cookie-Session, 
-                        Passport-Google-OAUTH20, MongoDB, mLab</p>
-                    <a href="https://github.com/memisgulden/Full-Stack-Project" target="_blank">GitHub</a>
-                    <hr>   
-                    <a href="https://arcane-citadel-23385.herokuapp.com/" target="_blank">See It Live</a>     
+                    <h4>Trivia Game</h4>
+                    <p>A simple trivia game using jQuery setTimeout(). Test your "It's Always Sunny in Philadelphia" knowledge.</p>
+                    <a href="https://github.com/memisgulden/TriviaGame" target="_blank">GitHub</a>
+                    <hr>
+                    <a href="https://obscure-beach-68595.herokuapp.com/" target="_blank">See It Live</a>
                 </div>
                 <div class="modal-footer">
                     <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
                 </div>
             </div>
+
+            <div id="modal4" class="modal">
+                    <div class="modal-content">
+                        <h4>Recipeze</h4>
+                        <p>Built using: HTML, CSS, Materialize, jQuery, JavaScript, Firebase, 
+                            YouTube API, iFrame API, Edamam API, Bootstrap
+                        </p>
+                        <a href="https://github.com/Group-5-Project-1/ProjectOne" target="_blank">GitHub</a>
+                        <hr>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                    </div>
+                </div>
+    
 
 
     </div>
